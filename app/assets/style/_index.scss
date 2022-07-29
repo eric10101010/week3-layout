@@ -1,0 +1,433 @@
+/*--common--*/
+.subtitle {
+    font-size: $text-4xl;
+    color: $secondary;
+    font-weight: bold;
+    text-align: center;
+    @include pad {
+        font-size: $text-xl;
+    }
+    @include mobile {
+        font-size: $text-m;
+    }
+}
+/*--區塊1-banner--*/
+.indexBanner {
+    background: url(../images/banner.png) no-repeat 50% 50%;
+    height: 787px;
+    @include mobile {
+        background: url(../images/banner-sm.png) no-repeat 0% 0%;
+        background-size: cover;
+        height: 396px;
+    }
+    &-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        h3 {
+            font-size: $text-2xl;
+            color: $secondary;
+            @include pad {
+                font-size: $text-m;
+            }
+            @include mobile {
+                font-size: $font-size-base;
+            }
+        }
+        h2 {
+            font-size: $text-5xl;
+            color: $secondary;
+            font-weight: bold;
+            @include pad {
+                font-size: $text-4xl;
+            }
+            @include mobile {
+                font-size: $text-l;
+            }
+        }
+    }
+    &-buyBtn {
+        background-color: $primary;
+        color: #FFFFFF;
+        padding: 6px 12px;
+        margin-top: 4px;
+        @include mobile {
+            margin-top: 8px;
+            font-size: $text-m;
+        }
+        &:hover {
+            color: #FFFFFF;
+            background-color: $secondary;
+            transition: .5s;
+        }
+    }
+}
+/*--區塊2-function--*/
+.function {
+    background-color: #FBF2F2;
+    padding-bottom: 80px;
+    @include pad {
+        padding-bottom: 56px;
+    }
+    @include mobile {
+        padding-bottom: 40px;
+    }
+    h3 {
+        padding-top: 80px;
+        padding-bottom: $text-l;
+        @include pad {
+            padding: 40px 0;
+        }
+        @include mobile {
+            padding-top: 40px;
+            padding-bottom: $text-l;
+            font-size: $text-l;
+        }
+    }
+    &-list {
+        display: flex;
+        column-gap: $text-l;
+        @include pad {
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+    }
+    &-item{
+        width: 23%;
+        flex-direction: column;
+        @include pad {
+            width: 48%;
+            margin-bottom: $text-xl;
+        }
+        @include mobile {
+            width: 100%;
+            margin-bottom: $text-l;
+        }
+        h4{
+            font-size: $text-l;
+            padding-top: $text-l;
+            padding-bottom: 8px;
+            color: $secondary;
+            font-weight: bold;
+            text-align: center;
+            @include mobile {
+                padding-top: $font-size-base;
+            }
+        }
+    }
+    &-img {
+        img {
+            height: 100px;
+        }
+    }
+}
+/*--區塊3-classic--*/
+.classic {
+    margin-bottom: 80px;
+    @include mobile {
+        margin-bottom: 40px;
+    }
+    &-title {
+        font-size: 48px;
+        margin-top: 80px;
+        margin-bottom: 48px;
+        @include mobile {
+            font-size: $text-l;
+            margin-top: 40px;
+            margin-bottom: $text-l;
+        }
+    }
+    &-list {
+        display: flex;
+        column-gap: $text-l;
+        flex-wrap: wrap;
+    }
+    &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 31%;
+        @include pad {
+            width: 100%;
+            margin-bottom: $text-l;
+        }
+    }
+    &-img {
+        img {
+            height: 416px;
+            @include pad {
+                height: 336px;
+            }
+            @include mobile {
+                height: 348px;
+            }
+        }
+    }
+    &-text {
+        h4 {
+            font-size: $text-4xl;
+            color: #AA0601;
+            font-family: Roboto;
+            font-style:italic;
+            font-weight: bold;
+        }
+    }
+}
+/*--區塊4-design--*/
+.design {
+    background: url(../images/bg.png) no-repeat 50% 50%;
+    height: 608px;
+    @include pad {
+        height: 960px;
+    }
+    @include mobile{
+        height: 820px;
+    }
+    &-title {
+        padding-top: 80px;
+        padding-bottom: $text-4xl;
+        @include mobile {
+            padding-top: 40px;
+            padding-bottom: $text-l;
+        }
+        h3 {
+            font-size: $text-4xl;
+            color: #FFFFFF;
+            text-align: center;
+            @include mobile{
+                font-size: $text-m;
+            }
+        }
+    }
+    &-content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &-item {
+        width: 50%;
+        @include pad {
+            width: 100%;
+            margin-bottom: $text-l;
+        }
+    }
+    &-text {
+        width: 100%;
+        background-color: #FFFFFF;
+        h3 {
+            text-align: center;
+            color: $primary;
+            font-size: $text-4xl;
+            font-style:italic;
+            font-weight: bold;
+            padding: 8px 0;
+        }
+    }
+    &-bg-one{
+        background: url(../images/home-section4-1.png) no-repeat 50% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 240px;
+        @include pad {
+            width: 100%;
+            height: 240px;
+        }
+        @include mobile{
+            width: 100%;
+            height: 240px;
+        }
+    }
+    &-bg-two{
+        background: url(../images/home-section4-2.png) no-repeat 50% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 240px;
+        @include pad {
+            width: 100%;
+            height: 240px;
+        }
+        @include mobile{
+            width: 100%;
+            height: 240px;
+        }
+    }
+}
+/*--區塊5-recommand--*/
+.recommend {
+    h3 {
+        font-size: $text-4xl;
+        color: $secondary;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 40px;
+        @include pad {
+            font-size: $text-xl;
+            padding-bottom: $text-xl;
+        }
+        @include mobile {
+            font-size: $text-m;
+            padding-top: 40px;
+            padding-bottom: $text-l;
+        }
+    }
+    margin-top: 60px;
+    margin-bottom: 80px;
+    @include pad {
+        margin-top: 40px;
+        margin-bottom: 56px;
+    }
+    @include mobile {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    &-list {
+        display: flex;
+        justify-content: center;
+        @include mobile {
+            padding: 0;
+        }
+    }
+    &-item {
+        @include pad {
+            width: 46.5%;
+        }
+        @include mobile {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 256px;
+            border-radius: 4px 4px 0px 0px;
+            @include mobile {
+                height: 306px;
+            }
+        }
+        @include pad {
+            margin-bottom: $text-xl;
+        }
+        @include mobile {
+            margin-bottom: $text-xl;
+            @include mobile {
+                margin-bottom: $font-size-base;
+            }
+        }
+    }
+    &-box{
+        box-shadow: 0px 2px 6px #00000029;
+        border-radius: 4px;
+        h4 {
+            font-size: 14px;
+            padding-top: $font-size-base;
+            padding-left: $font-size-base;
+        }
+    }
+    &-text {
+        height: 204px;
+        padding: $font-size-base;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h5 {
+            font-size: 14px;
+            color: #707070;
+        }
+    }
+}
+/*--區塊6-contact--*/
+.contact {
+    background: #FBF2F2;
+    padding-bottom: 80px;
+    @include pad {
+        padding-bottom: 56px;
+    }
+    @include mobile {
+        padding-bottom: 40px;
+    }
+    h3 {
+        color: $secondary;
+        text-align: center;
+        font-size: $text-4xl;
+        font-weight: bold;
+        padding-top: 60px;
+        padding-bottom: $text-l;
+        @include pad {
+            font-size: $text-xl;
+            padding-top: 40px;
+            padding-bottom: $text-l;
+        }
+        @include mobile {
+            font-size: $text-l;
+            padding-top: 40px;
+            padding-bottom: $text-l;
+        }
+    }
+    &-form {
+        width: 73%;
+        margin: 0 auto;
+        @include pad {
+            width: 60.65%;
+        }
+        @include mobile {
+            width: 100%;
+        }
+        p {
+            font-size: $text-m;
+            padding-bottom: $text-m;
+            @include pad {
+                font-size: $font-size-base;
+                padding-bottom: $font-size-base;
+            }
+        }
+        &-title {
+            padding-bottom: 4px;
+            @include pad {
+                padding-bottom: 8px;
+            }
+        }
+    }
+    
+    &-input {
+        padding: 6px 12px;
+        @include mobile {
+            margin-bottom: 8px;
+        }
+        @include mobile {
+            margin-bottom: $font-size-base;
+        }
+        
+    }
+    &-textarea {
+        height: 50px;
+        @include mobile {
+            height: 136px;
+        }
+    }
+    &-check-btn {
+        width: 416px;
+        margin: 0 auto;
+        margin-top: $text-4xl;
+        @include pad {
+            width: 336px;
+        }
+        @include mobile {
+            width: 100%;
+            margin-top: $text-l;
+        }
+    }
+    &-check-btn a{
+        padding: $font-size-base 0px;
+        background-color: #AA0601;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            color: #FFFFFF;
+            background-color: $secondary;
+            transition: .5s;
+        }
+        @include mobile {
+            padding: $font-size-base 0;
+        }
+    }
+}

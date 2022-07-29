@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outlined" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="header px-0">
+    <div class="header-box d-flex d-lg-flex d-md-flex justify-content-between align-items-center">
+      <div class="header-hamburger-logo">
+        <a href="index.html">glasses</a>
+      </div>
+      <nav class="d-lg-flex d-md-flex d-none">
+        <ul class="header-menu">
+          <li class="header-item"><a href="optical.html" class="header-link">系列鏡框</a></li>
+          <li class="header-item"><a href="store.html" class="header-link">門市據點</a></li>
+          <li class="header-item"><a href="blog.html" class="header-link">部落格</a></li>
+          <li class="header-item pe-0"><a href="question.html" class="header-link">常見問題</a></li>
+        </ul>
+      </nav>
+      <div class="header-hamburger d-lg-none d-md-none d-flex">
+        <input type="checkbox" id="toggler" class="d-none">
+        <label for="toggler">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+        <ul class="hamburger-menu">
+          <ul class="header-list d-flex">
+            <li class="header-item"><a href="optical.html" class="header-link">系列鏡框</a></li>
+            <li class="header-item"><a href="store.html" class="header-link">門市據點</a></li>
+            <li class="header-item"><a href="blog.html" class="header-link">部落格</a></li>
+            <li class="header-item"><a href="question.html" class="header-link">常見問題</a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <%- contents %>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-box">
+        <div class="footer-nav">
+          <div class="footer-top d-flex justify-content-between">
+            <ul class="footer-menu d-lg-flex d-md-flex d-none">
+              <li><a href="index.html" class="footer-link ps-0">首頁</a></li>
+              <li><a href="optical.html" class="footer-link">系列鏡框</a></li>
+              <li><a href="store.html" class="footer-link">門市據點</a></li>
+              <li><a href="blog.html" class="footer-link">部落格</a></li>
+              <li><a href="question.html" class="footer-link">常見問題</a></li>
+            </ul>
+            <div class="d-flex justify-content-between">
+              <ul class="footer-contact d-lg-none d-md-none d-block">
+                <li class="footer-contact-link d-flex align-items-center">
+                  <img src="assets/images/icon-phone.svg" alt="phone" class="footer-contactpic">
+                  <a href="tel:+886800-000-000" class="ps-lg-3 ps-md-2 ps-1">
+                    0800-000-000
+                  </a>
+                </li>
+                <li class="footer-contact-link d-flex align-items-center pb-0">
+                  <img src="assets/images/icon-mail.svg" alt="mail" class="footer-contactpic">
+                  <a href="mailto:glasses@business.com" class="ps-lg-3 ps-md-2 ps-1">
+                    glasses@business.com
+                  </a>
+                </li>
+              </ul>
+              <div class="footer-social">
+                <ul class="social-menu d-flex">
+                  <li>
+                    <a href="http://facebook.com.tw" class="footer-social-link">
+                      <img src="assets/images/icon-fb.svg" alt="instagram">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://instagram.com.tw" class="footer-social-link">
+                      <img src="assets/images/icon-ig.svg" alt="instagram">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://line.me/zh-hant/" class="footer-social-link">
+                      <img src="assets/images/icon-line.svg" alt="instagram">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <ul class="footer-contact d-lg-block d-md-block d-none">
+            <li class="footer-contact-link d-flex align-items-center">
+              <img src="assets/images/icon-phone.svg" alt="phone" class="footer-contactpic">
+              <a href="tel:+886800-000-000" class="ps-lg-3 ps-md-2 ps-2">
+                0800-000-000
+              </a>
+            </li>
+            <li class="footer-contact-link d-flex align-items-center pb-0">
+              <img src="assets/images/icon-mail.svg" alt="mail" class="footer-contactpic">
+              <a href="mailto:glasses@business.com" class="ps-lg-3 ps-md-2 ps-2">
+                glasses@business.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <hr class="line">
+      </div>
+      <div class="footer-copyright d-flex flex-lg-row flex-md-row flex-column justify-content-lg-between justify-content-md-between justify-content-start">
+        <p class="pb-2 pb-lg-0 pb-md-0">Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="footer-privacy d-flex lex-lg-row flex-md-row flex-column">
+          <li class="footer-privacy-item pb-2 pb-lg-0 pb-md-0">
+            <a href="#">隱私權政策</a>
+          </li>
+          <li class="footer-privacy-item ps-lg-5 ps-md-4">
+            <a href="#">服務條款</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
