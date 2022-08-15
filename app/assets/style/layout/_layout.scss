@@ -1,6 +1,7 @@
 .container{
-    max-width: 1140px;
+    max-width: 1320px;
     margin: 0 auto;
+    padding: 0 12px;
     @include pad {
     max-width: 100%;
     padding: 0 39px;
@@ -82,7 +83,6 @@
     &-link:hover{
         color: $secondary;
         transition: .5s;
-        opacity: 0.5;
     }
     &-hamburger {
         &-logo {
@@ -115,7 +115,12 @@
         &-link {
             padding-top: 30px;
             padding-left: 32px;
+
             img {
+                &:hover {
+                    border-radius: 10px;
+                    opacity: 0.6;
+                }
                 @include pad {
                     width: 24px;
                     height: 24px;
@@ -157,6 +162,10 @@
                 }
                 @include mobile {
                     font-size: 20px;
+                }
+                &:hover {
+                    color: $secondary;
+                    transition: .8s;
                 }
             }
             img {
@@ -204,11 +213,6 @@
         }
     }
 }
-.line {
-    color: #FFFFFF;
-    margin: 0;
-}
-
 .hamburger-menu {
     background-color: $primary;
     opacity: 0.97;
