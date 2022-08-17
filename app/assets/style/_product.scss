@@ -1,0 +1,226 @@
+.optical {
+    /*--區塊1-menu--*/
+    &-menu {
+        h2 {
+            font-size: $text-xl;
+            color: #000000;
+            font-weight: bold;
+            @include pad {
+                font-size: $text-l;
+            }
+            @include mobile {
+                font-size: $font-size-base;
+            }
+        }
+        span {
+            font-size: 44px;
+            @include pad {
+                font-size: $text-xl;
+            }
+            @include mobile {
+                font-size: $font-size-base;
+            }           
+        }
+        &-item {
+            width: 37%;
+            margin: 0 auto;
+            padding: $text-l 0;
+            border: 1px solid #DCDCDC;
+            @include pad {
+                padding: $font-size-base 0;
+            }
+            @include mobile {
+                padding-left: 13px;
+                padding-right: 12px;
+            }
+        }
+    }
+    /*--區塊2-banner--*/
+    &-banner {
+        &-one {
+            background: url('../images/banner-1.png') no-repeat 50% 0%;
+            background-size: cover;
+            height: 296px;
+            object-fit: cover;
+            @include pad {
+                height: 296px;
+            }
+            @include mobile {
+                height: 136px;
+            }
+        }
+        &-two {
+            background: url('../images/banner-2.png') no-repeat 0% 5%;
+            background-size: cover;
+            height: 296px;
+            object-fit: cover;
+            @include mobile {
+                height: 136px;
+            }
+        }
+        &-three {
+            background: url('../images/banner-3.png') no-repeat 50% 0%;
+            background-size: cover;
+            height: 296px;
+            object-fit: cover;
+            @include mobile {
+                height: 136px;
+            }
+        }
+        &-four {
+            background: url('../images/product-2-color.png') no-repeat 0% 5%;
+            background-size: cover;
+            height: 296px;
+            object-fit: cover;
+            @include mobile {
+                height: 136px;
+            }
+        }
+    }
+    /*--區塊3-prouct--*/
+    &-list {
+        margin-bottom: 80px;
+        @include mobile {
+            margin-bottom: $text-5xl;
+        }
+    }
+    &-product {
+        margin-top: 80px;
+        @include mobile {
+            margin-top: 40px;
+        }
+        h3 {
+            font-size: $text-3xl;
+            text-align: center;
+            font-weight: bold;
+            @include mobile {
+                font-size: $text-l;
+            }
+        }
+        h4 {
+            font-size: $text-xl;
+            text-align: center;
+            padding-bottom: $text-xl;
+            @include pad {
+                padding-bottom: $text-xl;
+            }
+            @include mobile {
+                padding-bottom: $text-l;
+                font-size: $text-l;
+            }
+        }
+        &-item {
+            margin-bottom: 80px;
+            @include pad {
+                margin-bottom: 40px;
+            }
+            @include mobile {
+                margin-bottom: $text-l;
+            }
+            img {
+                width: 100%;
+                height: 168px;
+                @include mobile {
+                    height: 166px;
+                }
+            }
+            h5 {
+                font-size: $text-l;
+            }
+            p {
+                font-size: $text-l;
+                color: $primary;
+                font-weight: bold;
+            }
+        }
+    }
+    &-color {
+        &-one {
+            width: $text-l;
+            height: $text-l;
+            background-color: #5F3E2D;
+            border-radius: 4px;
+        }
+        &-two {
+            width: $text-l;
+            height: $text-l;
+            background-color: #B75929;
+            border-radius: 4px;
+        }
+    }
+}
+.sunglasses {
+    &-list {
+        h3 {
+            font-size: $text-3xl;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 80px;
+            @include mobile {
+                margin-top: 40px;
+                font-size: $text-l;
+            }
+        }
+        h4 {
+            font-size: $text-xl;
+            text-align: center;
+            padding-bottom: $text-xl;
+            @include pad {
+                padding-bottom: $text-xl;
+            }
+            @include mobile {
+                padding-bottom: $text-l;
+                font-size: $text-l;
+            }
+        }
+        @include pad {
+            margin-bottom: 80px;
+        }
+        @include mobile {
+            margin-bottom: $text-5xl;
+        }
+    }
+    &-group {
+        margin-bottom: 80px;
+        @include mobile {
+            margin-bottom: $text-5xl;
+        }
+
+    }
+    &-product {
+        &-item {
+            margin-bottom: 80px;
+            @include pad {
+                margin-bottom: 40px;
+            }
+            @include mobile {
+                margin-bottom: $text-l;
+            }
+            img {
+                width: 348px;
+                height: 168px;
+                @include mobile {
+                    height: 224px;
+                }
+            }
+            h5 {
+                font-size: $text-l;
+            }
+            p {
+                font-size: $text-l;
+                color: $primary;
+                font-weight: bold;
+            }
+        }
+    }
+    &-text {
+        font-size: $text-l;
+        p {
+            color: $primary;
+            font-weight: bold;
+        }
+    }
+}
+.active {
+    border-bottom: 8px solid $primary;
+}

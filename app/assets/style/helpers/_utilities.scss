@@ -1,26 +1,17 @@
 .pr-5{
-    padding-right: 32px;
+    padding-right: $text-xl;
 }
 .pl-5{
-    padding-left: 32px;
+    padding-left: $text-xl;
 }
 .second-title {
-    font-size: 48px;
+    font-size: $text-4xl;
     font-weight: bold;
     h2 {
         border-left: 8px solid #9F1213;
-        padding-left: 16px;
+        padding-left: $font-size-base;
     }
     @include mobile {
-        font-size: 28px;
-    }
-}
-.pb-74 {
-    padding-bottom: 74px;
-}
-
-.pb-md-03 {
-    @include pad {
-        padding-bottom: 3px;
+        font-size: $text-l;
     }
 }

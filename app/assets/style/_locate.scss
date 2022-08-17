@@ -1,0 +1,115 @@
+.locate {
+    &-title {
+        margin-top: 96px;
+        margin-bottom: $text-xl;
+        h2 {
+            @include mobile {
+                font-size: $text-l;
+            }
+        }
+        @include pad {
+            margin-top: 80px;
+        }
+        @include mobile {
+            margin-top: 40px;
+            margin-bottom: $text-l;
+        }
+    }
+    &-list {
+        margin-top: 40px;
+        margin-bottom: 80px;
+        @include pad {
+            margin-top: 40px;
+            margin-bottom: 80px;
+        }
+        @include mobile {
+            margin-top: $text-l;
+            margin-bottom: $text-5xl;
+        }
+    }
+    &-box {
+        display: flex;
+    }
+    &-item {
+        width: 526px;
+        @include pad {
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        img {
+            width: 100%;
+            height: 224px;
+            @include pad {
+                width: 337px;
+                height: 224px;
+            }
+            @include mobile {
+                width: 348px
+            }
+        }
+        &-title {
+            font-size: $text-l;
+            color: #212529;
+            border: 1px solid #00000020;
+            padding: 8px $text-l;
+        }
+        &-body {
+            width: 100%;
+            border: 1px solid #00000020;
+            @include pad {
+                width: 337px;
+            }
+            @include mobile {
+                width: 348px
+            }
+        }
+        &-text {
+            font-size: $text-m;
+            padding: 0 $text-l;
+            p{
+                @include pad {
+                    font-size: $text-m;
+                }
+            }
+            span {
+                @include pad {
+                    font-size: $text-l;
+                }
+            }
+        }
+    }
+    &-map {
+        width: 746px;
+        height: 422px;
+        @include pad {
+            width: 696px;
+            height: 414px;
+        }
+        @include mobile {
+            width: 348px;
+            height: 208px;
+        }
+        iframe {
+            width: 100%;
+            height: 422px;
+            @include pad {
+                width: 696px;
+                height: 414px;
+            }
+            @include mobile {
+                width: 348px;
+                height: 208px;
+            }
+        }
+        @include pad {
+            margin-top: $text-l;
+        }
+    }
+    &-detail-btn a {
+        background-color: #212529;
+        color: #FFFFFF;
+        text-align: center;
+        padding: $text-m 0;
+    }
+}

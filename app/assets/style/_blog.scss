@@ -1,0 +1,330 @@
+.blog {
+    &-menu {
+        background-color: $secondary;
+        &-item {
+            font-size: $text-m;
+            padding: 13px 0;
+            padding-right: $text-4xl;
+            @include mobile {
+                font-size: $font-size-base;
+                padding: 12px 0;
+                padding-right: 25px;
+            }
+            a {
+                color: $white;
+            }
+        }
+    }
+    &-search {
+        img {
+            width: 29.15px;
+            height: 29.15px;
+        }
+    }
+    &-title {
+        margin-top: 96px;
+        margin-bottom: $text-xl;
+        @include pad {
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+        @include mobile {
+            margin-top: 40px;
+            margin-bottom: $text-l;
+        }
+    }
+    &-article {
+        column-gap: $text-l;
+        margin-bottom: 60px;
+        &-list {
+            margin-bottom:124px;
+            @include pad {
+                margin-bottom: 80px;
+            }
+            @include mobile {
+                margin-bottom: $text-5xl;
+            }
+        }
+        &-card {
+            &-list {
+                width: 825px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        @include pad {
+            margin-bottom: $text-l;
+        }
+        img {
+            width: 636px;
+            height: 400px;
+            @include pad{
+                width: 336px;
+                height: 208px;
+            }
+            @include mobile {
+                width: 348px;
+                height: 208px;
+            }
+        }
+        &-text {
+            width: 636px;
+            position: relative;
+            @include pad {
+                width: 336px;
+            }
+            @include mobile {
+                width: 348px;
+            }
+        }
+        &-title {
+            h3 {
+                font-size: $text-xl;
+                color: $secondary;
+                @include pad{
+                    font-size: $text-l;
+                }
+                @include mobile {
+                    padding-top: 8px;
+                }
+            }
+        }
+        &-date {
+            h4 {
+                font-size: $text-m;
+                font-weight: bold;
+                @include pad{
+                    font-size: $font-size-base;
+                    padding-bottom: 4px;
+                }
+                @include mobile {
+                    font-size: $font-size-base;
+                    padding-bottom: 0;
+                }
+            }
+            p {
+                color: #000000;
+                opacity: 0.7;
+                @include pad{
+                    font-size: $font-size-base;
+                    padding-bottom: 4px;
+                }
+                @include mobile {
+                    padding-bottom: 0;
+                }
+            }
+        }
+        &-body {
+            p {
+                font-size: $text-m;
+                color: $gray-500;
+                position: relative;
+                @include pad{
+                    font-size: $font-size-base;
+                    padding-bottom: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+        &-card {
+            p {
+                font-size: $text-m;
+                color: #0A0A0A;
+                padding-bottom: 40px;
+                @include pad {
+                    padding-bottom: $text-l;
+                }
+                @include mobile {
+                    padding-bottom: $font-size-base;
+                }
+            }
+        }
+        &-content {
+            column-gap: $text-l;
+        }
+    }
+    &-more a {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: $text-2xl;
+        color: $secondary;
+        font-weight: bold;
+        text-transform:uppercase;
+            @include pad {
+                font-weight: normal;
+                font-size: $font-size-base;
+                text-transform: lowercase;
+                position: absolute;
+                bottom: 2px;
+                right: 10px;
+                color: $gray-500;
+            }
+    }
+    &-bar {
+        @include mobile {
+            font-size: $font-size-base;
+        }
+        a {
+            color: $black;
+        }
+        p {
+            color: $primary;
+            cursor: pointer;
+        }
+    }
+    &-small {
+        h2 {
+            font-size: $text-4xl;
+            @include mobile {
+                font-size: $text-l;
+            }
+        }
+        h3 {
+            font-size: $text-l;
+            padding-bottom: $font-size-base;
+            font-weight: bold;
+            @include pad {
+                font-size: $text-l;
+                padding-bottom: $text-l;
+            }
+            @include mobile {
+                font-size: $font-size-base;
+                padding-bottom: $font-size-base;
+            }
+        }
+    }
+    &-tag {
+        &-title {
+            a {
+                font-size: $text-l;
+                color: $primary;
+                font-weight: bold;
+                @include mobile {
+                    font-size: $font-size-base;
+                }
+            }
+        }
+    }
+    &-detail {
+        &-article {
+            margin-bottom: 80px;
+            @include mobile {
+                margin-bottom: 56px;
+            }
+        }
+        &-tilte {
+            padding-bottom: $text-l;
+            @include mobile {
+                padding-bottom: $text-m;
+            }
+        }
+    }
+    &-article {
+        &-card {
+            &-list {
+                width: 856px;;
+                @include pad {
+                    width: 516px;
+                }
+                @include mobile {
+                    width: 348px;
+                }
+            }
+            p {
+                font-size: $font-size-base;
+                color: $gray-500;
+                @include pad {
+                    font-size: $font-size-base;
+                }
+            }
+            img {
+                height: 520px;
+                @include pad {
+                    width: 516px;
+                    height: 320px;
+                }
+                @include mobile {
+                    width: 100%;
+                    height: 208px;
+                }
+            }
+        }
+    }
+    &-social-icon {
+        border-bottom: 1px solid $gray-400;
+        padding-top: 40px;
+        padding-bottom: $font-size-base;
+        @include mobile {
+            padding-top: $text-m;
+            padding-bottom: $font-size-base;
+        }
+        p {
+            font-size: $font-size-base;
+            font-weight: bold;
+        }
+        a {
+            font-size: $text-l;
+            padding-left: $font-size-base;
+        }
+    }
+    &-page-btn {
+        p {
+            font-size: 19px;
+        }
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+    &-page {
+        &-item {
+            display: flex;
+            a {
+                color: $black;
+            }
+            span {
+                font-size: $text-l;
+            }
+        }
+    }
+    &-sidebar {
+        width: 265px;
+        @include pad {
+            width: 117px;
+        }
+        &-title {
+            @include pad {
+                padding-bottom: 8px;
+            }
+            img {
+                @include pad {
+                    width: $text-l;
+                    height: $text-l;
+                }
+            }
+            h3 {
+                font-size: $text-xl;
+                color: $primary;
+                font-weight: bold;
+                padding-left: 8px;
+                @include pad {
+                    font-size: $font-size-base;
+                    padding-left: 2px;
+                    padding-bottom: 0;
+                }
+            }
+        }
+        &-item {
+            p {
+                font-size: $text-l;
+                color: $primary;
+                font-weight: bold;
+                @include pad {
+                    font-size: $font-size-base;
+                }
+            }
+        }
+    }
+}

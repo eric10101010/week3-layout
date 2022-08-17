@@ -1,0 +1,120 @@
+.store {
+    &-menu {
+        select {
+            color: #495057;
+            opacity: 0.75;
+            font-size: 18px;
+        }
+    }
+    &-title {
+        margin-top: 96px;
+        margin-bottom: $text-xl;
+        h2 {
+            @include mobile {
+                font-size: $text-l;
+            }
+        }
+        @include pad {
+            margin-top: 80px;
+            margin-bottom: $text-xl;
+        }
+        @include mobile {
+            margin-top: 40px;
+            margin-bottom: $text-l;
+        }
+    }
+    &-select {
+        font-size: $text-l;
+        padding-right: $font-size-base;
+        @include mobile {
+            font-size: $font-size-base;
+            padding-right: 8px;
+        }
+    }
+    &-area {
+        width: 324px;
+        height: 45px;
+        outline: 1px solid #CED4DA;
+        padding: 6px 0;
+        padding-left: 12px;
+        opacity: 0.75;
+        @include mobile {
+            padding: 6px 12px;
+            font-size: 14px;
+            width: 277px;
+            height: $text-2xl;
+        }
+    }
+    &-locate {
+        margin-bottom: 80px;
+        @include mobile {
+            margin-bottom: $text-5xl;
+        }
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        column-gap: $text-l;
+        @include pad {
+            margin-top: 40px;
+        }
+        @include mobile {
+            margin-top: $text-l;
+            justify-content: center;
+        }
+    }
+    &-item {
+        width: 416px;
+        margin-bottom: 48px;
+        @include pad {
+            width: 336px;
+            margin-bottom: $text-l;
+        }
+        @include mobile {
+            width: 348px;
+        }
+        img {
+            width: 100%;
+            height: 224px;
+        }
+        &-title {
+            font-size: $text-l;
+            padding: 8px $text-l;
+            outline: 1px solid #00000020;
+            @include mobile {
+                padding: 8px $text-l;
+            }
+        }
+        &-body {
+            outline: 1px solid #00000020;
+            padding-right: $text-l;
+        }
+        &-text {
+            padding-left: $text-l;
+            span {
+                display: flex;
+                align-items: center;
+                font-size: $text-l;
+            }
+            p {
+                font-size: $text-m;
+                @include mobile {
+                    font-size: $text-m;
+                }
+            }
+        }
+    }
+    &-detail-btn a {
+        background-color: #212529;
+        color: #FFFFFF;
+        text-align: center;
+        padding: $text-m 0;
+        @include pad {
+            padding: $font-size-base 0;
+        }
+        @include mobile {
+            padding: $font-size-base 0;
+        }
+    }
+}

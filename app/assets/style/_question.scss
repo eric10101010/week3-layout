@@ -1,0 +1,59 @@
+.question {
+    &-content {
+        width: 856px;
+        @include pad {
+            width: 696px;
+        }
+        @include mobile {
+            width: 348px;
+        }
+    }
+    &-title {
+        margin-top: 96px;
+        margin-bottom: $text-xl;
+        @include pad {
+            margin-top: 80px;
+            margin-bottom: $text-xl;
+        }
+        @include mobile {
+            margin-top: 40px;
+            margin-bottom: $text-l;
+        }
+    }
+    &-list {
+        margin-bottom: 80px;
+        @include pad {
+            margin-bottom: 80px;
+        }
+        @include mobile {
+            margin-bottom: $text-5xl;
+        }
+        h3 {
+            font-size: $text-l;
+            font-weight: bold;
+            padding-bottom: $text-l;
+            @include mobile {
+                font-size: $text-l;
+                padding-bottom: $text-l;
+            }
+        }
+    }
+    &-head {
+        h4 {
+            font-size: $text-m;
+            font-weight: bold;
+            @include mobile {
+                font-size: $text-m;
+            }
+        }
+    }
+    &-body {
+        p {
+            padding-bottom: $text-xl;
+            @include mobile {
+                font-size: $font-size-base;
+                padding-bottom: $text-l;
+            }
+        }
+    }
+}

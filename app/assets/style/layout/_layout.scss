@@ -4,22 +4,16 @@
     padding: 0 12px;
     @include pad {
     max-width: 100%;
-    padding: 0 39px;
+    padding: 0 36px;
     }
     @include mobile {
-    padding: 0 15px;
-    }
-}
-.row{
-    @include mobile{
-        padding: 0 15px;
+    padding: 0 13px;
     }
 }
 .header {
-    &-box {
+    &-box {    
         justify-content: space-between;
         align-items: center;
-        padding: 0 88px;
         @include pad {
             padding: 0 39px;
         }
@@ -42,7 +36,7 @@
             transition: all .3s;
         }
         @include mobile{
-            width: 48px;
+            width: $text-4xl;
             margin: 0 auto;
             padding: 15px 0;
         }
@@ -58,17 +52,17 @@
         flex-wrap: wrap;
     }
     &-item{
-        padding: 0 32px;
+        padding: 0 $text-xl;
         @include mobile {
             width: 50%;
-            border: 1px solid #ffffff;
+            border: 1px solid $white;
         }
         a{
             color: $white;
             font-size: $text-m;
             line-height: 1.5;
             @include mobile{
-                font-size: 16px;
+                font-size: $font-size-base;
                 padding: 12px 0;
             }
         }
@@ -77,7 +71,7 @@
         }
     }
     &-link {
-        font-size: 20px;
+        font-size: $text-m;
         color: #FFFFFF;
     }
     &-link:hover{
@@ -99,22 +93,22 @@
 .footer {
     background-color: $primary;
     &-link {
-        padding: 0 24px;
+        padding: 0 $text-l;
         padding-top: 44px;
-        padding-bottom: 36px;
+        padding-bottom: $text-2xl;
         color: #FFFFFF;
         &:hover {
             color: $secondary;
             transition: .5s;
         }
         @include pad {
-            padding: 32px 40px 24px 0;
+            padding: $text-2xl 40px $text-l 0;
         }
     }
     &-social {
         &-link {
             padding-top: 30px;
-            padding-left: 32px;
+            padding-left: $text-2xl;
 
             img {
                 &:hover {
@@ -122,32 +116,32 @@
                     opacity: 0.6;
                 }
                 @include pad {
-                    width: 24px;
-                    height: 24px;
+                    width: $text-l;
+                    height: $text-l;
                 }
             }
             @include pad {
-                padding-top: 32px;
-                padding-left: 24px;
+                padding-top: $text-xl;
+                padding-left: $text-l;
             }
             @include mobile {
-                padding-top: 24px;
+                padding-top: $text-l;
             }
         }
     }
     &-contact {
-        border-bottom: 1px solid #FFFFFF;
-        padding-bottom: 24px;
+        border-bottom: 1px solid $white;
+        padding-bottom: $text-l;
         @include pad {
-            padding-bottom: 20px;
+            padding-bottom: $text-m;
         }
         @include mobile {
             border-bottom: 0;
             padding-top: 25px;
-            padding-bottom: 24px;
+            padding-bottom: $text-l;
         }
         &-link {
-            padding-bottom: 16px;
+            padding-bottom: $font-size-base;
             @include pad {
                 padding-bottom: 12px;
             }
@@ -155,13 +149,13 @@
                 padding-bottom: 6px;
             }
             a {
-                font-size: 36px;
+                font-size: $text-2xl;
                 color: #FFFFFF;
                 @include pad {
-                    font-size: 20px;
+                    font-size: $text-m;
                 }
                 @include mobile {
-                    font-size: 20px;
+                    font-size: $text-m;
                 }
                 &:hover {
                     color: $secondary;
@@ -169,30 +163,30 @@
                 }
             }
             img {
-                width: 48px;
-                height: 48px;
+                width: $text-4xl;
+                height: $text-4xl;
                 @include pad {
-                    width: 24px;
-                    height: 24px;
+                    width: $text-l;
+                    height: $text-l;
                 }
                 @include mobile {
-                    width: 20px;
-                    height: 20px;
+                    width: $text-m;
+                    height: $text-m;
                 }
             }
 
         }
     }
     &-copyright {
-        padding-top: 32px;
+        padding-top: $text-xl;
         padding-bottom: 40px;
         @include pad {
-            padding-top: 24px;
-            padding-bottom: 32px;
+            padding-top: $text-l;
+            padding-bottom: $text-xl;
         }
         @include mobile {
-            padding-top: 16px;
-            padding-bottom: 24px;
+            padding-top: $font-size-base;
+            padding-bottom: $text-l;
         }
         p {
             color: #FFFFFF;

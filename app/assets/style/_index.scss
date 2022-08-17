@@ -48,7 +48,7 @@
     }
     &-buyBtn {
         background-color: $primary;
-        color: #FFFFFF;
+        color: $white;
         padding: 6px 12px;
         margin-top: 4px;
         @include mobile {
@@ -56,7 +56,7 @@
             font-size: $text-m;
         }
         &:hover {
-            color: #FFFFFF;
+            color: $white;
             background-color: $secondary;
             transition: .5s;
         }
@@ -64,7 +64,7 @@
 }
 /*--區塊2-function--*/
 .function {
-    background-color: #FBF2F2;
+    background-color: $light;
     padding-bottom: 80px;
     @include pad {
         padding-bottom: 56px;
@@ -128,9 +128,9 @@
         margin-bottom: 40px;
     }
     &-title {
-        font-size: 48px;
+        font-size: $text-4xl;
         margin-top: 80px;
-        margin-bottom: 48px;
+        margin-bottom: $text-4xl;
         @include mobile {
             font-size: $text-l;
             margin-top: 40px;
@@ -166,8 +166,7 @@
     &-text {
         h4 {
             font-size: $text-4xl;
-            color: #AA0601;
-            font-family: Roboto;
+            color: $primary;
             font-style:italic;
             font-weight: bold;
         }
@@ -192,7 +191,7 @@
         }
         h3 {
             font-size: $text-4xl;
-            color: #FFFFFF;
+            color: $white;
             text-align: center;
             @include mobile{
                 font-size: $text-m;
@@ -213,7 +212,7 @@
     }
     &-text {
         width: 100%;
-        background-color: #FFFFFF;
+        background-color: $white;
         h3 {
             text-align: center;
             color: $primary;
@@ -329,13 +328,13 @@
         justify-content: space-between;
         date {
             font-size: 14px;
-            color: #707070;
+            color: $gray-400;
         }
     }
 }
 /*--區塊6-contact--*/
 .contact {
-    background: #FBF2F2;
+    background: $light;
     padding-bottom: 80px;
     @include pad {
         padding-bottom: 56px;
@@ -414,13 +413,13 @@
     }
     &-check-btn a{
         padding: $font-size-base 0px;
-        background-color: #AA0601;
-        color: #FFFFFF;
+        background-color: $primary;
+        color: $white;
         display: flex;
         align-items: center;
         justify-content: center;
         &:hover {
-            color: #FFFFFF;
+            color: $white;
             background-color: $secondary;
             transition: .5s;
         }
