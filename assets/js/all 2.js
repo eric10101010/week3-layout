@@ -9,5 +9,4 @@ $(document).ready(function () {
     $(this).toggleClass('open');
   });
 });
-AOS.init();
 //# sourceMappingURL=all.js.map

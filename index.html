@@ -8,6 +8,7 @@
   <title>首頁</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outlined" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -47,13 +48,12 @@
         </div>
       </div>
     </div>
-
   </header>
   <div class="main">
     <!--區塊一-->
 <section class="indexBanner d-flex justify-content-center align-items-center justify-content-sm-end img-fluid">
   <div class="container">
-    <div class="indexBanner-title">
+    <div class="indexBanner-title" data-aos="fade-left">
       <h3>Promise-Desert 2020 早春系列</h3>
       <h2>看得清，才能看得遠</h2>
       <a href="optical.html" class="indexBanner-buyBtn">立即購買</a>
@@ -62,7 +62,7 @@
 </section>
 <!--區塊二-->
 <section class="function">
-  <div class="container">
+  <div class="container" data-aos="flip-up">
     <h3 class="subtitle">用專業的心，做專業的事</h3>
     <ul class="function-list d-flex row g-0">
       <li class="function-item">
@@ -106,7 +106,7 @@
 </section>
 <!--區塊三-->
 <section class="classic">
-  <div class="container">
+  <div class="container" data-aos="zoom-in">
     <h3 class="classic-title subtitle">經典系列鏡框</h3>
     <ul class="classic-list d-flex">
       <li class="classic-item d-flex flex-column">
@@ -160,7 +160,7 @@
 </section>
 <!--區塊五-->
 <section class="recommend">
-  <div class="container">
+  <div class="container" data-aos="fade-right">
     <h3>顧客推薦</h3>
     <ul class="recommend-list row">
       <li class="recommend-item col-lg-3 col-md-6">
@@ -308,6 +308,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
