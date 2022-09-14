@@ -9,3 +9,5 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 	});
 });
+
+AOS.init();
