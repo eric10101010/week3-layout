@@ -1,6 +1,11 @@
 .optical {
     /*--區塊1-menu--*/
     &-menu {
+        &-list {
+            @include pad {
+                width: 100%;
+            }
+        }
         h2 {
             font-size: $text-xl;
             color: #000000;
@@ -22,16 +27,12 @@
             }           
         }
         &-item {
-            width: 37%;
-            margin: 0 auto;
-            padding: $text-l 0;
             border: 1px solid #DCDCDC;
-            @include pad {
-                padding: $font-size-base 0;
-            }
-            @include mobile {
-                padding-left: 13px;
-                padding-right: 12px;
+            h2 {
+                padding: 24px 0;
+                @include pad {
+                    padding: 16px 0;
+                }
             }
         }
     }

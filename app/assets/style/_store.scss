@@ -57,6 +57,8 @@
         margin-top: 40px;
         column-gap: $text-l;
         @include pad {
+            width: 100%;
+            justify-content: flex-start;
             margin-top: 40px;
         }
         @include mobile {
@@ -107,9 +109,13 @@
     }
     &-detail-btn a {
         background-color: #212529;
-        color: #FFFFFF;
+        color: $white;
         text-align: center;
         padding: $text-m 0;
+        &:hover {
+            background-color: #AA0601;
+            transition: .6s;
+        }
         @include pad {
             padding: $font-size-base 0;
         }

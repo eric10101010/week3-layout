@@ -1,13 +1,4 @@
 .question {
-    &-content {
-        width: 856px;
-        @include pad {
-            width: 696px;
-        }
-        @include mobile {
-            width: 348px;
-        }
-    }
     &-title {
         margin-top: 96px;
         margin-bottom: $text-xl;
